@@ -35,6 +35,7 @@ const App=()=>{
         text:"Please Enter a value",
         backgroundColor:"#EA7773",
         textColor:"#FFFFFF",
+        duration: Snackbar.LENGTH_SHORT,
       })
 
     }
@@ -65,7 +66,7 @@ return (
        {Object.keys(currencyPerRuppe).map((currency)=>(
           <TouchableOpacity key={currency} 
           style={styles.converterButton}
-          onPress={()=>{buttonTappped(currency)}}
+          onPress={()=>buttonTappped(currency)}
           >
           <Text style={styles.convertButtonText}>{currency}</Text>
           </TouchableOpacity>
